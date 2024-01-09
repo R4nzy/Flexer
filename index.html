@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexer</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <img src="img.png" class="image">
+    <button class="Olympia"><i class='bx bx-download'></i>Download Olympia</button>
+    <button class="discord"><i class='bx bxl-discord-alt' ></i>Discord Server</button>
+  </div>
+</body>
+
+<style>
+  body{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(20,20,20);
+    background-size: 100%;
+    display: flex;
+  }
+
+  .container{
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+  }
+
+
+  .image{
+    position: absolute;
+    left: 25%;
+    top: -1%;
+    width: 45%;
+    height: 75%;
+  }
+
+
+ .Olympia {
+  font-size: larger;
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  left: 15%;
+  top: 75%;
+  color: white;
+  background-color: #09569e;
+  border: solid;
+  border-radius: 15px;
+  border-color: #2484dd;
+ }
+
+ .Olympia:hover {
+  background-color: white;
+  color: #09569e;
+ }
+
+ .discord {
+  font-size: larger;
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  left: 50%;
+  top: 75%;
+  color: white;
+  background-color: #09569e;
+  border: solid;
+  border-radius: 15px;
+  border-color: #2484dd;
+ }
+
+ .discord:hover {
+  background-color: white;
+  color: #09569e;
+ }
+
+</style>
+
+<script>
+  var Olympia = document.querySelector(".Olympia")
+  var discord = document.querySelector(".discord")
+
+  Olympia.addEventListener("click", function() {
+    location.href = "https://raw.githubusercontent.com/R4nzy/Olympia/main/Olympia%20(1).zip"
+  });
+
+  discord.addEventListener('click', function(){
+    location.href = "https://discord.gg/mSp4fhEJeV"
+  });
+</script>
+</html>
